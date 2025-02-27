@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/fondo18.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>GraphQL</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/Logitech.jpeg" alt="GraphQL">
+
+            <div class="camisa__contenido">
+                <p> GraphQL es un lenguaje de consulta para APIs que permite obtener solo los datos que realmente necesitas. Con GraphQL, las aplicaciones pueden realizar consultas más precisas y evitar la sobrecarga de datos innecesarios. Es un enfoque moderno que mejora la eficiencia y la flexibilidad en las comunicaciones entre el cliente y el servidor, siendo una alternativa poderosa a RESTful APIs.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar Talla --</option>
+                        <option>1 ventilador (Single-fan)</option>
+                        <option>2 ventiladores (Dual-fan):</option>
+                        <option>3 ventiladores (Triple-fan)</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - @ Todos los derechos Reservados 2025.Portales Web</p>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
