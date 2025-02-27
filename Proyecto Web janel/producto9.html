@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/fondo18.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Samsung 990 Pro 2TB NVMe SSD</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/disco.jpeg" alt="Samsung 990 Pro 2TB NVMe SSD">
+
+            <div class="camisa__contenido">
+                <p> El Samsung 990 Pro 2TB NVMe SSD es una opción líder para quienes buscan velocidad extrema en sus sistemas. Con velocidades de lectura y escritura de hasta 7,450 MB/s y 6,900 MB/s respectivamente, este SSD es perfecto para gaming, edición de video y otros trabajos que requieren un almacenamiento rápido y confiable. ¡Lleva tu rendimiento a un nivel superior!</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar Talla --</option>
+                        <option>1 ventilador (Single-fan)</option>
+                        <option>2 ventiladores (Dual-fan):</option>
+                        <option>3 ventiladores (Triple-fan)</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - @ Todos los derechos Reservados 2025.Portales Web</p>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

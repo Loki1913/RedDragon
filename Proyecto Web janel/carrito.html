@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+  /* Estilos para el carrito */
+  #carrito-contenido {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        .producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;  /* Ancho del contenedor de cada producto */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 100px;  /* Tamaño reducido de la imagen */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .producto h3 {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .producto p {
+            font-size: 12px;
+            margin: 3px 0;
+        }
+
+        .boton-eliminar {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .boton-eliminar:hover {
+            background-color: darkred;
+        }
+
+        #carrito-vacio {
+            text-align: center;
+            font-size: 18px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    
+            
+            <header class="header">
+                <a href="index.html">
+                    <img class="header__logo" src="img/fondo18.png" alt="Logotipo">
+                </a>
+            </header>
+        
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="index.html">Tienda</a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="carrito.html">Carrito</a>
+            </nav>
+        
+            <main class="contenedor">
+                <h1>Carrito de Compras</h1>
+        
+                <!-- Sección cuando el carrito está vacío -->
+                <div id="carrito-vacio" class="carrito__vacio">
+                    <p>Tu carrito está vacío.</p>
+                </div>
+        
+                <!-- Sección con los productos que están en el carrito -->
+                <div id="carrito-contenido" class="carrito__contenido">
+                    <!-- Aquí aparecerán los productos añadidos -->
+                </div>
+        
+                <!-- Total y botón de compra -->
+                <div id="total" class="carrito__total">
+                    <p>Total: $<span id="total-valor">0</span></p>
+                    <button id="comprar-btn" class="boton-comprar">Comprar</button>
+                </div>
+            </main>
+        
+            
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - @ Todos los derechos Reservados 2025. Portales Web</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

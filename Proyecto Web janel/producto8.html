@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/fondo18.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>G.Skill Trident Z5 RGB 32GB DDR5 6400MHz</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/ram2.jpg" alt="G.Skill Trident Z5 RGB 32GB DDR5 6400MHz">
+
+            <div class="camisa__contenido">
+                <p> La G.Skill Trident Z5 RGB 32GB DDR5 6400MHz es una de las mejores opciones de memoria para aquellos que buscan rendimiento extremo y estética. Con una frecuencia de 6400MHz, esta memoria RAM es perfecta para overclocking y tareas de alto rendimiento, como la edición de videos o juegos en 4K.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar Talla --</option>
+                        <option>1 ventilador (Single-fan)</option>
+                        <option>2 ventiladores (Dual-fan):</option>
+                        <option>3 ventiladores (Triple-fan)</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - @ Todos los derechos Reservados 2025.Portales Web</p>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
